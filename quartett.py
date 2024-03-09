@@ -3,7 +3,7 @@ import random
 import time
 import sys
 
-all_cars = pandas.read_csv("useableAutos.csv")
+all_cars = pandas.read_csv("AutosNeu.csv")
 
 # evtl vor spiel abfragen
 quartettgroesse = 32
@@ -15,7 +15,7 @@ kartenset = all_cars.sample(n=quartettgroesse)
 spieler = kartenset.iloc[:(int(quartettgroesse/2))]  # stapel in mitte teilen
 computer = kartenset.iloc[(int(quartettgroesse/2)):]  
 
-attributreihenfolge= ["name", "baujahr", "karrosserieform", "preis", "kilometerstand", "leistung", "gewicht"]
+attributreihenfolge= ["name", "baujahr", "karosserieform", "preis", "kilometerstand", "leistung", "gewicht"]
 
 
 
